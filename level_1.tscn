@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://c8m5mklcx3c28"]
+
+[ext_resource type="PackedScene" uid="uid://cebaatbadufmx" path="res://block.tscn" id="1_3hls8"]
+[ext_resource type="PackedScene" uid="uid://c7tyydui8nbuo" path="res://character.tscn" id="1_hbghi"]
+[ext_resource type="Texture2D" uid="uid://d3fmw5mu02m3c" path="res://icon.svg" id="3_ihfcg"]
+[ext_resource type="Script" uid="uid://b7j3l2vnsphhu" path="res://icon.gd" id="4_rka8t"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ilcil"]
+size = Vector3(10, 0.5, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3hls8"]
+size = Vector3(10, 0.5, 10)
+
+[node name="Level1" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.861611, 0.507568, 0, -0.507568, 0.861611, -0.126943, 4.37063, 7.72145)
+
+[node name="Floor" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.082232, -0.236418, 0)
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("BoxMesh_ilcil")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+shape = SubResource("BoxShape3D_3hls8")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.612231, 0.790679, 0, -0.790679, 0.612231, 0, 4.96538, -0.696298)
+shadow_enabled = true
+
+[node name="Character" parent="." instance=ExtResource("1_hbghi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95766, 3.74865)
+
+[node name="Blocks" type="Node3D" parent="."]
+
+[node name="Block" parent="Blocks" instance=ExtResource("1_3hls8")]
+transform = Transform3D(1, 0, 0, 0, 0.824689, 0.565586, 0, -0.565586, 0.824689, 0, 5.44746, 0)
+
+[node name="Block2" parent="Blocks" instance=ExtResource("1_3hls8")]
+transform = Transform3D(1, 0, 0, 0, -0.676028, 0.736876, 0, -0.736876, -0.676028, -0.20128, 7.44631, 0.456846)
+
+[node name="Block3" parent="Blocks" instance=ExtResource("1_3hls8")]
+transform = Transform3D(1, 0, 0, 0, 0.930065, -0.367394, 0, 0.367394, 0.930065, 0, 10.5238, -0.488953)
+
+[node name="Block4" parent="Blocks" instance=ExtResource("1_3hls8")]
+transform = Transform3D(1, 0, 0, 0, 0.232834, 0.972516, 0, -0.972516, 0.232834, -0.20128, 11.2629, 1.42361)
+
+[node name="Icon" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.31748, 2.20808)
+texture = ExtResource("3_ihfcg")
+script = ExtResource("4_rka8t")
