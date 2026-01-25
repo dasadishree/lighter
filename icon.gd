@@ -1,4 +1,5 @@
 extends Sprite3D
+var godotAwesone = true
 
 #runs when game starts once
 func _ready() -> void:
@@ -6,5 +7,4 @@ func _ready() -> void:
 
 #runs every frame
 func _process(delta: float) -> void:
-	rotate_y(deg_to_rad(2))
 	pass

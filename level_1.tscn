@@ -1,11 +1,16 @@
-[gd_scene load_steps=7 format=3 uid="uid://c8m5mklcx3c28"]
+[gd_scene load_steps=8 format=3 uid="uid://c8m5mklcx3c28"]
 
 [ext_resource type="PackedScene" uid="uid://cebaatbadufmx" path="res://block.tscn" id="1_3hls8"]
 [ext_resource type="PackedScene" uid="uid://c7tyydui8nbuo" path="res://character.tscn" id="1_hbghi"]
-[ext_resource type="Texture2D" uid="uid://d3fmw5mu02m3c" path="res://icon.svg" id="3_ihfcg"]
-[ext_resource type="Script" uid="uid://b7j3l2vnsphhu" path="res://icon.gd" id="4_rka8t"]
+[ext_resource type="Environment" uid="uid://btgj4actlwhii" path="res://resources/level_1_environment.tres" id="4_ihfcg"]
+[ext_resource type="PackedScene" uid="uid://774g1v0s381m" path="res://coin.tscn" id="5_rka8t"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rka8t"]
+albedo_color = Color(0.36, 0.21258, 0.1332, 1)
+roughness = 0.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_ilcil"]
+material = SubResource("StandardMaterial3D_rka8t")
 size = Vector3(10, 0.5, 10)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3hls8"]
@@ -27,7 +32,7 @@ mesh = SubResource("BoxMesh_ilcil")
 shape = SubResource("BoxShape3D_3hls8")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.612231, 0.790679, 0, -0.790679, 0.612231, 0, 4.96538, -0.696298)
+transform = Transform3D(1.00047, 0, 0, 0, 0.612518, 0.791049, 0, -0.791049, 0.612518, 0, 4.96538, -0.696298)
 shadow_enabled = true
 
 [node name="Character" parent="." instance=ExtResource("1_hbghi")]
@@ -47,7 +52,8 @@ transform = Transform3D(1, 0, 0, 0, 0.930065, -0.367394, 0, 0.367394, 0.930065, 
 [node name="Block4" parent="Blocks" instance=ExtResource("1_3hls8")]
 transform = Transform3D(1, 0, 0, 0, 0.232834, 0.972516, 0, -0.972516, 0.232834, -0.20128, 11.2629, 1.42361)
 
-[node name="Icon" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.31748, 2.20808)
-texture = ExtResource("3_ihfcg")
-script = ExtResource("4_rka8t")
+[node name="Coin" parent="." instance=ExtResource("5_rka8t")]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -1.79071, 0.976412, 4.14058)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("4_ihfcg")
