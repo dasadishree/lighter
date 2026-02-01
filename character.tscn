@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://c7tyydui8nbuo"]
+[gd_scene load_steps=6 format=3 uid="uid://c7tyydui8nbuo"]
 
 [ext_resource type="Script" uid="uid://c1v5066islkgi" path="res://character.gd" id="1_glpr6"]
 
@@ -8,13 +8,20 @@ albedo_color = Color(0.7125, 0.25, 1, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_vu45j"]
 material = SubResource("StandardMaterial3D_glpr6")
 
+[sub_resource type="CylinderMesh" id="CylinderMesh_glpr6"]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_glpr6"]
 
 [node name="Character" type="CharacterBody3D"]
 script = ExtResource("1_glpr6")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("BoxMesh_vu45j")
+
+[node name="Face" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(0.609793, 0, 0, 0, -2.8773e-09, -0.609793, 0, 0.0658248, -2.66549e-08, 0, 2.2881e-08, -0.523457)
+mesh = SubResource("CylinderMesh_glpr6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_glpr6")
@@ -27,3 +34,5 @@ transform = Transform3D(1, 0, 0, 0, 0.863686, 0.50403, 0, -0.50403, 0.863686, 0,
 
 [node name="Camera3D" type="Camera3D" parent="Camera_Controller/Camera_Target"]
 transform = Transform3D(1, 0, 0, 0, 0.974095, -0.226141, 0, 0.226141, 0.974095, 0, -4.65661e-10, -0.0126517)
+
+[node name="RayCast3D" type="RayCast3D" parent="."]

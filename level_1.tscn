@@ -13,7 +13,7 @@ transform = Transform3D(1.00047, 0, 0, 0, 0.612518, 0.791049, 0, -0.791049, 0.61
 shadow_enabled = true
 
 [node name="Character" parent="." instance=ExtResource("1_hbghi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95766, 3.74865)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0129166, 0.928665, 3.78919)
 
 [node name="Blocks" type="Node3D" parent="."]
 
