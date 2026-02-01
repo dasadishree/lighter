@@ -9,6 +9,9 @@ material = SubResource("StandardMaterial3D_qncar")
 [sub_resource type="BoxShape3D" id="BoxShape3D_im0tn"]
 
 [node name="Block" type="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000935793, 0.00357366, -0.00171304)
+collision_layer = 4
+collision_mask = 3
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_qncar")
