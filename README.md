@@ -1,3 +1,9 @@
+# Lighter!
+Initially I made this for Smore but took way too long learning how to use Godot so I never submitted to the hackathon, but anyways my first real Godot project (not counting Jumpstart)
+
+https://dasadishree.itch.io/lighter GO CHECK IT OUT!!!!
+
+# idk what the rest of this is it was alr there
 <a id="readme-top"></a>
 
 <!-- SHIELDS -->
