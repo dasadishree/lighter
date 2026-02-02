@@ -149,35 +149,35 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.1788, -1.47586, -63.1787)
 hud = NodePath("../../HUD")
 
 [node name="Coin23" parent="Coins" node_paths=PackedStringArray("hud") instance=ExtResource("5_rka8t")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.1788, -20.4759, -103.179)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1788, -20.4759, -103.179)
 hud = NodePath("../../HUD")
 
 [node name="Coin24" parent="Coins" node_paths=PackedStringArray("hud") instance=ExtResource("5_rka8t")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.1788, -21.4759, -103.179)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1788, -21.4759, -103.179)
 hud = NodePath("../../HUD")
 
 [node name="Coin25" parent="Coins" node_paths=PackedStringArray("hud") instance=ExtResource("5_rka8t")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.1788, -22.4759, -103.179)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1788, -22.4759, -103.179)
 hud = NodePath("../../HUD")
 
 [node name="Coin26" parent="Coins" node_paths=PackedStringArray("hud") instance=ExtResource("5_rka8t")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.1788, -24.4759, -103.179)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1788, -24.4759, -103.179)
 hud = NodePath("../../HUD")
 
 [node name="Coin27" parent="Coins" node_paths=PackedStringArray("hud") instance=ExtResource("5_rka8t")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.1788, -23.4759, -103.179)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1788, -23.4759, -103.179)
 hud = NodePath("../../HUD")
 
 [node name="Coin28" parent="Coins" node_paths=PackedStringArray("hud") instance=ExtResource("5_rka8t")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.1788, -19.4759, -103.179)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1788, -19.4759, -103.179)
 hud = NodePath("../../HUD")
 
 [node name="Coin29" parent="Coins" node_paths=PackedStringArray("hud") instance=ExtResource("5_rka8t")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.1788, -39.4759, -103.179)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1788, -39.4759, -103.179)
 hud = NodePath("../../HUD")
 
 [node name="Coin30" parent="Coins" node_paths=PackedStringArray("hud") instance=ExtResource("5_rka8t")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.1788, -41.4759, -103.179)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1788, -41.4759, -103.179)
 hud = NodePath("../../HUD")
 
 [node name="HUD" parent="." instance=ExtResource("7_j7kpp")]

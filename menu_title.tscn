@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfquwyqp1iksx"]
+
+[ext_resource type="FontFile" uid="uid://43qqaviyv34w" path="res://assets/fonts/FreckleFace-Regular.ttf" id="1_a1x2l"]
+[ext_resource type="Script" uid="uid://b303jk4clhfos" path="res://menu_title.gd" id="1_n3opb"]
+
+[node name="MenuTitle" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n3opb")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -15.0
+offset_top = -19.0
+offset_right = 1174.0
+offset_bottom = 656.0
+color = Color(1, 0.685, 0.37, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 350.0
+offset_top = 86.0
+offset_right = 798.0
+offset_bottom = 300.0
+theme_override_colors/font_color = Color(0.977449, 0.865694, 0.681247, 1)
+theme_override_colors/font_shadow_color = Color(0.679021, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.917948, 0.337454, 0.0159107, 1)
+theme_override_constants/shadow_offset_y = 9
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("1_a1x2l")
+theme_override_font_sizes/font_size = 150
+text = "lighter"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 446.0
+offset_top = 460.0
+offset_right = 709.0
+offset_bottom = 544.0
+theme_override_fonts/font = ExtResource("1_a1x2l")
+theme_override_font_sizes/font_size = 50
+text = "PLAY"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = -126.0
+offset_top = 261.0
+offset_right = 1289.0
+offset_bottom = 475.0
+theme_override_colors/font_color = Color(0.89, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_a1x2l")
+theme_override_font_sizes/font_size = 50
+text = "collect all 30 coins to win. 
+don't get killed by the enemies. 
+good luck."
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
