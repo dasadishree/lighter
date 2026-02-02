@@ -2,6 +2,7 @@
 Initially I made this for Smore but took way too long learning how to use Godot so I never submitted to the hackathon, but anyways my first real Godot project (not counting Jumpstart)
 
 https://dasadishree.itch.io/lighter GO CHECK IT OUT!!!!
+<img width="570" height="317" alt="Screenshot 2026-02-01 at 11 56 09 PM" src="https://github.com/user-attachments/assets/e116b1f6-6cbd-41bf-a1d5-167834ccf310" />
 
 # idk what the rest of this is it was alr there
 <a id="readme-top"></a>
